@@ -3,8 +3,8 @@ import styled from 'styled-components';
 
 const Zdjecie = styled.img`
         background-color: pink;
-        width: 40px;
-        height: 40px;
+        width: 80px;
+        height: 80px;
         border-radius: 50%;
         position absolute;
         margin: 0 auto;

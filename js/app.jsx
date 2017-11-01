@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Main from '../src/component/Main.jsx';
 import Contact from '../src/component/Contact.jsx';
+import Gallery from '../src/component/Gallery.jsx';
 import Template from '../src/component/Template.jsx';
 import NotFound from '../src/component/NotFound.jsx';
 import { Router,
@@ -9,7 +10,7 @@ import { Router,
     IndexRoute,
     hashHistory
 } from 'react-router';
-import baseStyles from '../src/component/index'
+import baseStyles from '../src/component/Index'
 
 
 
@@ -22,6 +23,7 @@ document.addEventListener('DOMContentLoaded', function(){
                     <Route path='/' component={Template}>
                         <IndexRoute component={Main} />
                         <Route path='/contact' component={Contact} />
+                        <Route path='/gallery' component={Gallery} />
                         <Route path='*' component={NotFound} />
                     </Route>
                 </Router>
