@@ -10,5 +10,8 @@ export default () => injectGlobal`
       color: #444444;
       font-size: 62.5%;  
   }
+  *, *:before, *:after {
+      box-sizing: inherit;
+    }
    
 `;

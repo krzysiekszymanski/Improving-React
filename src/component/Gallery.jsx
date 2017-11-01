@@ -5,6 +5,7 @@ const Panels = styled.div`
       min-height:300px;
       overflow: hidden;
       display: flex;
+    
  `;
 const Panel = styled.div`
       background:#6B0F9C;
@@ -46,7 +47,7 @@ const Panel = styled.div`
     
     p {
       text-transform: uppercase;
-      font-family: 'Amatic SC', cursive;
+    
       text-shadow:0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
       font-size: 2em;
     }
@@ -77,7 +78,7 @@ class Gallery extends React.Component {
             })
         } else {
             this.setState({
-                style: ''
+                style: '5'
             })
         }
 
@@ -88,16 +89,16 @@ class Gallery extends React.Component {
         let divStyle = {
             flex: this.state.style
         }
-        console.log(this.state.style)
+
         return(
 
         <Panels>
-            <Panel onClick={this.handleClick} style={divStyle}>
+            <Panel onClick={this.handleClick} style={divStyle} key={'firstphoto'}>
                 <p>Hey</p>
                 <p>Let's</p>
                 <p>Dance</p>
             </Panel>
-            <Panel onClick={this.handleClick} style={divStyle}>
+            <Panel onClick={this.handleClick} style={divStyle} key={'secondphoto'}>
                 <p>Give</p>
                 <p>Take</p>
                 <p>Receive</p>
