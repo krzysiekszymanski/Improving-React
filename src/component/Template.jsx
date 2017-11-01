@@ -1,4 +1,5 @@
 import React from 'react';
+import Photo from './Photo.jsx'
 import {
     IndexLink
 } from 'react-router';
@@ -7,7 +8,8 @@ import styled from 'styled-components';
 
 
 const Menu = styled.ul`
-        background-color: blue;
+       background-color: blue;
+        
 `;
 const Link = styled(IndexLink)`
         background-color:yellow;
@@ -22,7 +24,7 @@ class Template extends React.Component {
         }
         return (
             <div>
-                <h1>App</h1>
+                <Photo/>
                 <Menu>
                     <Link activeStyle={activeStyle} to="/">home</Link>
                     <Link activeStyle={activeStyle} to="/contact">contact</Link>
