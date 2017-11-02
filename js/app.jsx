@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import Main from '../src/component/Main.jsx';
 import Contact from '../src/component/Contact.jsx';
 import Gallery from '../src/component/Gallery.jsx';
+import Login from '../src/component/Login.jsx';
 import Template from '../src/component/Template.jsx';
 import NotFound from '../src/component/NotFound.jsx';
 import { Router,
@@ -24,6 +25,7 @@ document.addEventListener('DOMContentLoaded', function(){
                         <IndexRoute component={Main} />
                         <Route path='/contact' component={Contact} />
                         <Route path='/gallery' component={Gallery} />
+                        <Route path='/login' component={Login} />
                         <Route path='*' component={NotFound} />
                     </Route>
                 </Router>

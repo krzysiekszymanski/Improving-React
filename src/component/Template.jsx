@@ -47,6 +47,7 @@ class Template extends React.Component {
                     <Link activeStyle={activeStyle} to="/">home</Link>
                     <Link activeStyle={activeStyle} to="/contact">contact</Link>
                     <Link activeStyle={activeStyle} to="/gallery">gallery</Link>
+                    <Link activeStyle={activeStyle} to="/login">login</Link>
                 </Menu>
                 <Content>
 
