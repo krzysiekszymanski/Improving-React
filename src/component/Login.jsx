@@ -3,13 +3,10 @@ import Header from '../auth/Header.jsx';
 import Home from '../auth/Home.jsx';
 import Auth0Lock from 'auth0-lock';
 
-
-
-
 class Login extends React.Component {
     static defaultProps = {
-        clientId: '59fb8834b29cc62709689e4d',
-        domain:'https://krzysiek.auth0.com/api/v2/'
+        clientId: 'sziXgWYwZGGWkNfhHCBxj5uuxQ859QLL',
+        domain:'krzysiek.auth0.com'
     }
 
     componentWillMount(){

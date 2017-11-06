@@ -7,7 +7,7 @@ const Navbar = styled.nav`
       overflow: hidden;
       display: flex; 
  `;
-const Text = styled.li`
+const Text = styled.a`
       font-size: 2rem; 
  `;
 
@@ -21,7 +21,7 @@ class Header extends Component {
         return (
             <Navbar>
                 <ul>
-                    <Text onClick={this.onLoginClick.bind(this)}>Login</Text>
+                    <Text onClick={this.onLoginClick.bind(this)} href="#">Login</Text>
                 </ul>
             </Navbar>
         );
