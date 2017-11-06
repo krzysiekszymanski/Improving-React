@@ -1,18 +1,28 @@
 import React, { Component } from 'react';
-import {Navbar, Nav, NavItem} from 'react-bootstrap';
+import styled from 'styled-components';
+
+
+const Navbar = styled.nav`
+      min-height:50px;
+      overflow: hidden;
+      display: flex; 
+ `;
+const Text = styled.li`
+      font-size: 2rem; 
+ `;
+
 
 class Header extends Component {
+    onLoginClick(){
+        this.props.onLoginClick();
+    }
+
     render() {
         return (
             <Navbar>
-                <Navbar.Header>
-                    <Navbar.Brand>
-                        ReactAuth App
-                    </Navbar.Brand>
-                </Navbar.Header>
-                <Nav>
-                    <NavItem href="#">Login</NavItem>
-                </Nav>
+                <ul>
+                    <Text onClick={this.onLoginClick.bind(this)}>Login</Text>
+                </ul>
             </Navbar>
         );
     }
